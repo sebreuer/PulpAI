@@ -1,4 +1,9 @@
-# ![PulpAI Logo](assets/pulp_logo.png) 🚀 PulpAI — The Unified Intelligence Layer
+<table>
+  <tr>
+    <td><img src="assets/pulp_logo.png" alt="PulpAI Logo" width="100"></td>
+    <td><h1>PulpAI — All your accounts. One executable chat.</h1></td>
+  </tr>
+</table>
 
 > **"Communication is fragmented. Relationships shouldn't be."**
 
