@@ -109,6 +109,8 @@ The current MVP utilizes **n8n** as a powerful orchestration engine to bridge th
 * **Confidence through Control:** We eliminate "AI hallucinations" from reaching the client by keeping the human user as the final gatekeeper.
 * **Zero-Inertia:** Decisions are made where you already spend your time: in your mobile messaging app.
 
+---
+
 ## 🤝 Investment & Vision
 
 PulpAI is building the **Invisible OS** for professional communication. We are currently scaling from our successful **n8n Proof-of-Concept** to a robust, native architecture.
