@@ -83,6 +83,32 @@ Phase 1: The "Speed-to-Market" Stack (MVP - Current)
 
 ---
 
+## ⚙️ How it Works (Phase 1: The n8n Workflow)
+
+The current MVP utilizes **n8n** as a powerful orchestration engine to bridge the gap between legacy email protocols and modern messaging interfaces.
+
+### 1. Inbound Intelligence
+* **Trigger:** The workflow monitors the **Gmail API** for incoming messages in real-time.
+* **Pre-Processing:** A custom logic node filters for priority and extracts the core context, removing clutter like signatures and legal disclaimers.
+
+### 2. Contextual Style Mirroring
+* **Analysis:** The extracted content is sent to an **LLM (GPT-4o/Claude)** with a specific system prompt.
+* **Tone Matching:** The AI analyzes the sender's professional tone and linguistic patterns.
+* **Drafting:** It generates a high-quality response draft that mirrors the sender's style while addressing all action items.
+
+### 3. Human-in-the-Loop Approval
+* **Notification:** The draft is pushed to the user via the **WhatsApp Business API** as an interactive message.
+* **Validation:** The user can review, edit, or approve the draft with a single tap.
+* **Execution:** Upon approval, an **HTTP Request Node** triggers the final Gmail send-action, maintaining the original thread integrity.
+
+---
+
+### 🛡️ Core Principles
+
+* **Privacy by Design:** Data is only processed during the active workflow execution. No emails are stored permanently in the orchestration layer.
+* **Confidence through Control:** We eliminate "AI hallucinations" from reaching the client by keeping the human user as the final gatekeeper.
+* **Zero-Inertia:** Decisions are made where you already spend your time: in your mobile messaging app.
+
 ## 🤝 Investment & Vision
 
 PulpAI is building the **Invisible OS** for professional communication. We are currently scaling from our successful **n8n Proof-of-Concept** to a robust, native architecture.
