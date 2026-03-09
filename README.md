@@ -46,14 +46,40 @@ The ultimate evolution: Shifting from **Channel-Centric** to **Person-Centric** 
 
 ---
 
-## 🛠 Tech Stack (The Vision)
+## 🛠 Tech Stack
 
-| Layer | Technology |
-| :--- | :--- |
-| **Frontend** | Next.js (Tailwind CSS) + **Vercel AI SDK** for Generative UI |
-| **Orchestrator** | TypeScript/Node.js backend managing multi-channel Webhooks |
-| **Memory** | Vector Database (Pinecone/Supabase) for cross-channel context |
-| **Connectivity** | Official APIs: Gmail, Slack, Telegram, and Meta Graph |
+Phase 1: The "Speed-to-Market" Stack (MVP - Current)
+
+**Focus:** Validation, Rapid Prototyping, and Low Overhead.
+
+* **Orchestration:** n8n (Self-hosted)
+* **LLM Engine:** OpenAI GPT-4o / Claude 3.5 Sonnet
+* **Interface:** WhatsApp Business API (via Meta)
+* **Data Handling:** n8n Binary & JSON Storage (Internal Database)
+* **Connectors:** Gmail Nodes & Custom HTTP Request Nodes (API-First approach)
+
+---
+
+### Phase 2: The "Performance" Stack (Native Platform)
+
+**Focus:** Scalability, Low Latency, and Custom User Experience.
+
+* **Frontend:** **Next.js** (Web) & **React Native** (Mobile)
+* **AI Framework:** **Vercel AI SDK** (Generative UI Components)
+* **Backend:** **Node.js (TypeScript)** – Transitioning from low-code to custom microservices
+* **Authentication & Database:** **Supabase (PostgreSQL)** – Relational data for user profiles
+* **Real-time Layer:** **WebSockets (Socket.io)** – Instant sync for multi-channel pings
+
+---
+
+### Phase 3: The "Intelligence" Stack (Unified Platform)
+
+**Focus:** Deep Data Integration and Cross-Channel Identity Mapping.
+
+* **Memory & Context:** **Pinecone (Vector Database)** – Long-term RAG for cross-channel history
+* **Identity Engine:** **Proprietary Mapping Logic** – Merging Email, Slack, and Social IDs
+* **Event Processing:** **Redis / BullMQ** – High-volume message queue management
+* **Deployment:** **AWS (Elastic Kubernetes Service)** – Global scaling and enterprise-grade infrastructure
 
 ---
 
