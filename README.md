@@ -1,4 +1,4 @@
-# ![PulpAI Logo](assets/logo.png) 🚀 PulpAI — The Unified Intelligence Layer
+# ![PulpAI Logo](assets/pulp_logo.png) 🚀 PulpAI — The Unified Intelligence Layer
 
 > **"Communication is fragmented. Relationships shouldn't be."**
 
