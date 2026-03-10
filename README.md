@@ -9,11 +9,12 @@ PulpAI aggregates your fragmented digital communications into a single, executab
 It acts as the operating system for your digital identity—presenting everything in one unified chat where you can decide, approve, and act instantly. Whether for professional project management or personal life, PulpAI merges your worlds into one interface.
 
 <div align="center">
-  <a href="#roadmap">Roadmap</a> · <a href="#how-it-works">How it works</a> · <a href="https://docs.pulpai.com">Docs</a> · <a href="#getting-started">Getting Started</a>
+  <a href="#roadmap">Roadmap</a> · <a href="#edge">The Pulp Edge</a> · <a href="https://docs.pulpai.com">Docs</a> · <a href="#getting-started">Getting Started</a>
 </div>
 
 ---
 
+<a name="roadmap"></a>
 ## 🗺️ The Roadmap
 
 ### Phase 1: The WhatsApp Inbox
@@ -36,12 +37,13 @@ The end of channel-based messaging. All messages from one person—no matter if 
 
 ---
 
-## ✨ Why PulpAI?
+<a name="edge"></a>
+## ⚡ The Pulp Edge
 
-* **Eradicate Response Inertia:** Transform passive, wordy data into bite-sized, executable tasks. Go from "request received" to "decisive resolution" in just one tap.
-* **Your Executive Command Center:** Stop managing apps; start managing outcomes. We handle the grunt work—summarizing, drafting, and structuring—while you make the final executive calls.
-* **Unified Identity Architecture:** Move from channel-based noise to person-centric intelligence. We map all your fragmented accounts to one verified human entity.
-* **Velocity with Vigilance (HITL):** Get the raw speed of autonomous AI, anchored by the security of human oversight. You stay the final authority; we provide the automated execution.
+* **Eradicate Response Inertia:** We bridge the gap between receiving information and taking action. Instead of manual toggling, Pulp turns passive messages into structured, executable tasks.
+* **Your Executive Command Center:** Stop managing siloed apps; start managing outcomes. Pulp centralizes your scattered digital threads, letting you summarize, draft, and approve in one fluid interface.
+* **Unified Identity Architecture:** We move from channel-centric to person-centric communication. By mapping fragmented handles (Email, Slack, Socials) to a single identity, we create a unified view of your relationships that platform silos can’t match.
+* **Velocity with Vigilance (HITL):** Get the raw speed of an autonomous agent without the "black box" risk. With our Human-in-the-Loop architecture, you stay the final authority while the AI handles the heavy lifting.
 
 ---
 
@@ -90,6 +92,11 @@ The current MVP utilizes **n8n** as a powerful orchestration engine to bridge th
 * **Trigger:** The workflow monitors the **Gmail API** for incoming messages in real-time.
 * **Pre-Processing:** A custom logic node filters for priority and extracts the core context, removing clutter like signatures and legal disclaimers.
 
+| INBOUND (Email → WhatsApp) | OUTBOUND (WhatsApp → Email) |
+| :--- | :--- |
+| <pre>Gmail API Trigger<br>       │<br>       ▼<br>┌──────────────┐<br>│ Gemini Agent │───> Extract Action Items<br>└──────┬───────┘<br>       │<br>       ▼<br>┌──────────────┐<br>│  n8n Parser  │───> Map Data & Store Mapping<br>└──────┬───────┘<br>       │<br>       ▼<br>WhatsApp Business API (Alert + CTA)</pre> | <pre>WhatsApp Webhook<br>       │<br>       ▼<br>┌──────────────┐<br>│ Lookup State │───> Fetch Original Thread<br>└──────┬───────┘<br>       │<br>       ▼<br>┌──────────────┐<br>│ Gemini Agent │───> Style Mirroring & Reply Gen<br>└──────┬───────┘<br>       │<br>       ▼<br>Gmail Send Action (Thread Reply)</pre> |
+
+
 ### 2. Contextual Style Mirroring
 * **Analysis:** The extracted content is sent to an **LLM (GPT-4o/Claude)** with a specific system prompt.
 * **Tone Matching:** The AI analyzes the sender's professional tone and linguistic patterns.
@@ -102,7 +109,7 @@ The current MVP utilizes **n8n** as a powerful orchestration engine to bridge th
 
 ---
 
-### 🛡️ Core Principles
+## 🛡️ Core Principles
 
 * **Privacy by Design:** Data is only processed during the active workflow execution. No emails are stored permanently in the orchestration layer.
 * **Confidence through Control:** We eliminate "AI hallucinations" from reaching the client by keeping the human user as the final gatekeeper.
