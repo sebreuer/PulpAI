@@ -1,53 +1,47 @@
-<table>
-  <tr>
-    <td><img src="assets/pulp_logo.png" alt="PulpAI Logo" width="100"></td>
-    <td><h1>PulpAI — All your accounts. One executable chat.</h1></td>
-  </tr>
-</table>
+<div align="center">
+  <img src="assets/pulp_logo_text.png" alt="PulpAI Logo" width="150">
+  <h1>PulpAI — Your Identity. One Stream.</h1>
+  <p><strong>PulpAI is your personal action layer.</strong></p>
+</div>
 
-> **"Communication is fragmented. Relationships shouldn't be."**
+PulpAI aggregates your fragmented digital communications into a single, executable stream. Instead of context-switching between dozens of apps like Email, Slack, WhatsApp, Instagram, or CRM tools, PulpAI extracts tasks and intent from your messages. 
 
-PulpAI is a **Generative AI** communication layer engineered to eliminate friction in professional workflows. By transforming WhatsApp into a remote control for your digital ecosystem, we solve the "Information Overload" crisis through a **Human-in-the-Loop** approach—ensuring AI efficiency without the risk of losing control.
+It acts as the operating system for your digital identity—presenting everything in one unified chat where you can decide, approve, and act instantly. Whether for professional project management or personal life, PulpAI merges your worlds into one interface.
 
----
-
-## 🔴 The Problem: Context-Switching Fatigue
-
-Modern professionals lose **30% of their productivity** to "Efficiency Leaks": the constant toggling between Outlook, Slack, and LinkedIn to retrieve information and manage tasks.
-
-* **Data Silos:** Information is trapped in disconnected platforms.
-* **Response Inertia:** Drafting professional replies while on the move is a high-friction task.
-* **The Trust Gap:** Users are reluctant to let autonomous agents communicate on their behalf without oversight.
+<div align="center">
+  <a href="#roadmap">Roadmap</a> · <a href="#how-it-works">How it works</a> · <a href="https://docs.pulpai.com">Docs</a> · <a href="#getting-started">Getting Started</a>
+</div>
 
 ---
 
-## 🗺️ Roadmap: Three Phases to Market Dominance
+## 🗺️ The Roadmap
 
-### Phase 1: The "Zero-Inertia Inbox" (MVP - Active)
-We bridge the gap between Gmail and WhatsApp using a sophisticated **Orchestration Layer**.
-* **Style Mirroring:** Our engine analyzes the sender's tone (formal/casual) and drafts an optimized response.
-* **Confidence through Control:** No message is sent without a one-tap manual approval.
-* **Impact:** Rapid communication with zero friction.
+### Phase 1: The WhatsApp Inbox
+Your emails and messages arrive as summarized WhatsApp notifications with clear buttons (CTAs) to act immediately.
+* **Style Mirroring:** Analyzes sender tone to draft perfectly optimized, context-aware replies.
+* **Confidence through Control:** Keeps you in the loop with one-tap manual approvals before any action is taken.
+* **Executable CTAs:** Turns wordy emails into simple buttons, enabling instant replies while you're on the move.
 
-### Phase 2: The Pulp App (Generative UI Platform)
-Transitioning from a messaging bot to a native platform where static text is replaced by **Generative UI**.
-* **Dynamic Adaptation:** The interface "invents" itself in real-time. If an email suggests a meeting, Pulp renders a calendar widget. If it contains an invoice, a payment terminal appears.
-* **Platform Mirroring:** Every service (Gmail, Slack, Teams) is consolidated into dedicated streams within the Pulp ecosystem.
-* **Core Tech:** Vercel AI SDK, React Server Components.
+### Phase 2: The Pulp App
+A single, smart interface that adapts to your tasks and replaces communication via scattered apps.
+* **Generative UI:** The interface changes based on content; get a meeting request, and a calendar widget appears. Get an invoice, and a payment button pops up.
+* **Platform Mirroring:** Consolidates all your services (Gmail, Slack, Teams) into one clean, unified feed.
+* **Fluid Experience:** Built with Vercel AI SDK and React Server Components for a fast, native-feeling experience.
 
-### Phase 3: Identity Aggregation (The Game Changer) 🏆
-The ultimate evolution: Shifting from **Channel-Centric** to **Person-Centric** communication.
-* **One Thread. Every Channel:** All interactions with a specific contact live in a single, unified chat.
-* **Unified Intelligence:** A single chronological timeline merging an email from the morning, a Slack message from noon, and a LinkedIn DM from the evening.
-* **Identity Mapping Engine:** Pulp automatically links disparate handles (Email, Slack ID, Socials) to a single verified human entity.
+### Phase 3: Identity Aggregation 🏆
+The end of channel-based messaging. All messages from one person—no matter if email, Slack, or LinkedIn—are bundled into one thread.
+* **One Thread, Every Channel:** Stop hunting through apps. All interactions with a specific contact live in a single, chronological timeline.
+* **Identity Mapping Engine:** Automatically links disparate handles (Email, Slack ID, Socials) to a single verified human entity.
+* **Unified Intelligence:** Provides a holistic view of your relationships, decoupling your communication from the platform silos.
 
 ---
 
-## ✨ Key Value Propositions (USPs)
+## ✨ Why PulpAI?
 
-* **Human-in-the-Loop (HITL):** We provide the velocity of an AI agent with the safety of a human signature.
-* **Zero-Inertia Workflow:** We eliminate the barrier between receiving information and taking decisive action.
-* **AI Efficiency with Total Oversight:** We automate the "grunt work" of drafting and formatting while leaving the final executive decision to the user.
+* **Eradicate Response Inertia:** Transform passive, wordy data into bite-sized, executable tasks. Go from "request received" to "decisive resolution" in just one tap.
+* **Your Executive Command Center:** Stop managing apps; start managing outcomes. We handle the grunt work—summarizing, drafting, and structuring—while you make the final executive calls.
+* **Unified Identity Architecture:** Move from channel-based noise to person-centric intelligence. We map all your fragmented accounts to one verified human entity.
+* **Velocity with Vigilance (HITL):** Get the raw speed of autonomous AI, anchored by the security of human oversight. You stay the final authority; we provide the automated execution.
 
 ---
 
