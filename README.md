@@ -47,40 +47,17 @@ The end of channel-based messaging. All messages from one person—no matter if 
 
 ---
 
-## 🛠 Tech Stack
+## 🛠 Tech Stack Evolution
 
-Phase 1: The "Speed-to-Market" Stack (MVP - Current)
-
-**Focus:** Validation, Rapid Prototyping, and Low Overhead.
-
-* **Orchestration:** n8n (Self-hosted)
-* **LLM Engine:** OpenAI GPT-4o / Claude 3.5 Sonnet
-* **Interface:** WhatsApp Business API (via Meta)
-* **Data Handling:** n8n Binary & JSON Storage (Internal Database)
-* **Connectors:** Gmail Nodes & Custom HTTP Request Nodes (API-First approach)
-
----
-
-### Phase 2: The "Performance" Stack (Native Platform)
-
-**Focus:** Scalability, Low Latency, and Custom User Experience.
-
-* **Frontend:** **Next.js** (Web) & **React Native** (Mobile)
-* **AI Framework:** **Vercel AI SDK** (Generative UI Components)
-* **Backend:** **Node.js (TypeScript)** – Transitioning from low-code to custom microservices
-* **Authentication & Database:** **Supabase (PostgreSQL)** – Relational data for user profiles
-* **Real-time Layer:** **WebSockets (Socket.io)** – Instant sync for multi-channel pings
-
----
-
-### Phase 3: The "Intelligence" Stack (Unified Platform)
-
-**Focus:** Deep Data Integration and Cross-Channel Identity Mapping.
-
-* **Memory & Context:** **Pinecone (Vector Database)** – Long-term RAG for cross-channel history
-* **Identity Engine:** **Proprietary Mapping Logic** – Merging Email, Slack, and Social IDs
-* **Event Processing:** **Redis / BullMQ** – High-volume message queue management
-* **Deployment:** **AWS (Elastic Kubernetes Service)** – Global scaling and enterprise-grade infrastructure
+| Feature | Phase 1: Speed-to-Market (Current) | Phase 2: Performance (Native) | Phase 3: Intelligence (Scale) |
+| :--- | :--- | :--- | :--- |
+| **Focus** | Validation & Prototyping | Scalability & Custom UX | Identity Mapping & RAG |
+| **Orchestration** | n8n (Self-hosted) | Node.js (TypeScript) | Custom Event-Driven Microservices |
+| **Frontend** | WhatsApp Business API | Next.js & React Native | Unified Cross-Platform App |
+| **AI Engine** | GPT-4o / Claude 3.5 | Vercel AI SDK (GenUI) | Custom RAG via Pinecone |
+| **Database** | n8n Internal (JSON) | Supabase (PostgreSQL) | Vector DB + Redis/BullMQ |
+| **Infrastructure** | Low-code / Docker | Cloud-native (Vercel/Supa) | AWS (EKS / Kubernetes) |
+| **Core Value** | "Last Mile" Delivery | Seamless UX & Low Latency | Unified Identity Architecture |
 
 ---
 
